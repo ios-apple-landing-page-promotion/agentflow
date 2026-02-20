@@ -258,14 +258,14 @@
     }
     .badgeText .small{
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: .2px;
       opacity: .92;
       margin-bottom: 3px;
     }
     .badgeText .big{
       font-size: 30px;
-      font-weight: 800;
+      font-weight: 600;
       letter-spacing: -.5px;
     }
 
@@ -468,8 +468,8 @@
 
     /* Footer */
     footer{
-      margin-top: 40px;
-      padding-top: 18px;
+      margin-top: 20px;   /* nga 40px → 20px */
+      padding-top: 8px;   /* nga 18px → 8px */
       border-top: 1px solid rgba(15,23,42,.08);
       color: var(--muted);
       font-size: 12px;
@@ -480,12 +480,20 @@
       align-items:center;
     }
 
+@media (max-width: 520px){
+  footer{
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+  }
+}
     @media (max-width: 520px){
       .navLinks .link{ display:none; }
       .hero{ padding-top: 34px; }
       .appStoreBadge{ min-width: auto; height: 68px; }
       .badgeText .big{ font-size: 28px; }
     }
+
   </style>
 </head>
 
